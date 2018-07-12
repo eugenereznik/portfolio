@@ -1,0 +1,240 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* fonts */
+
+h1{
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 32pt;
+    padding-left: 25px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+h2{
+    text-align: center;
+    font-family: 'VT323', monospace;
+    font-size: 48pt;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 28%;
+    margin-right: 28%;
+    color: white;
+    background: black;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+
+h3{
+    font-family: 'roboto mono', monospace;
+    text-align: center;
+    font-size: 24pt;
+    letter-spacing: 1px; 
+}
+
+h4{
+    font-family: 'roboto mono', monospace;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+/* buttons */
+
+a {
+    text-decoration: none;
+    font-family: 'roboto mono', monospace;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:link {
+    color:inherit;
+    text-decoration: none;
+ }
+
+.mainbuttons{
+    color: white;
+    background: black;
+    border: 2px solid white;
+    padding: 20px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.mainbuttons:hover{
+    color: black;
+    background: white;
+    text-decoration: none;
+}
+
+.mainbuttons:link {
+    color:inherit;
+    text-decoration: none;
+ }
+
+.socialbuttons{
+    color: white;
+    background: black;
+    border: 2px solid white;
+    padding: 20px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.socialbuttons:hover { 
+    color: black;
+    background:white;
+    text-decoration: none;
+}
+
+.socialbuttons:link{
+    color:inherit;
+    text-decoration: none;
+ }
+
+/* the rest */
+
+
+.header{
+    display: block;
+    background: black;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    padding: 0;
+    z-index: 1;
+    flex-grow: 3;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.logo{
+    max-width: 90px;
+    height: auto;
+}
+
+.name{
+    flex-grow: 3;
+    text-align: left;
+}
+
+main{
+    line-height: 1.4;
+}
+
+.contact{
+    color: white;
+    text-decoration: none;
+    font-family: 'roboto mono', monospace;
+    font-size: 14pt;
+    padding-right: 25px;
+    flex-basis: 33.3%;
+    text-align: right;
+}    
+
+.links{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.images{
+    padding: 1px;
+    max-width: 640px;
+    height: auto;
+}
+
+footer{
+    margin-top: 160px;
+    padding-top: 25px;
+    padding-bottom: 100px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: 'roboto mono', monospace;
+}
+
+.elsewhere{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+
+/* project links */
+
+.images:hover {
+    transition: .5s ease;
+    opacity: .1;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    padding: 1px;
+    max-width: 640px;
+    height: auto;
+}
+
+.overlay{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.button{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .overlay{
+    opacity: .3
+}
+
+.container:hover .button{
+    opacity: 1;
+}
+
+.hed{
+    background: black;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    padding: 20px;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
